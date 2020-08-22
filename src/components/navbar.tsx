@@ -8,6 +8,7 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import {useHistory} from 'react-router-dom'
 import Link from '@material-ui/core/Link';
+import Popover from "@material-ui/core/Popover";
 import ClickAwayListener from "@material-ui/core/ClickAwayListener";
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -29,17 +30,22 @@ export default function NavBar() {
     const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
         setAnchorEl(event.currentTarget);
       };
+
+    const handleClose = () => {
+    setAnchorEl(null);
+  };
+
     return (
         <AppBar className={classes.root} style={{backgroundColor: '#444445', position: 'absolute'}}>
             <Toolbar>
-                <Typography variant='h4' style={{color: 'white', fontWeight: 'bold', paddingLeft: 60}} onClick={() => history.push('/')}>ALFONSO VELASCO</Typography>
+                <Typography className='header-name' variant='h4' style={{color: 'white', fontWeight: 'bold', paddingLeft: 60}} onClick={() => history.push('/')}>ALFONSO VELASCO</Typography>
                 <div className='art-nav'>
-                    <div className='art-mobile'>
-                    <IconButton style={{ color: "black" }} onClick={handleClick}>
+                    <div className='art-mobile' >
+                    <IconButton style={{ color: "white" }} onClick={handleClick}>
                          <MenuIcon style={{ fontSize: 40 }} />
                     </IconButton>
                     </div>
-                    <div>
+                    <div className='art-nav-items'>
                     <Link
                     component="button"
                     variant="body2"
@@ -61,6 +67,43 @@ export default function NavBar() {
                     PROJECTS
                 </Link>
                     </div>
+                    <Popover
+            open={Boolean(anchorEl)}
+            anchorEl={anchorEl}
+            anchorOrigin={{
+              vertical: "bottom",
+              horizontal: "right"
+            }}
+            transformOrigin={{
+              vertical: "top",
+              horizontal: "right"
+            }}
+          >
+                    <ClickAwayListener onClickAway={handleClose}>
+                        <div className="art-mobile-items">
+                        <Link
+                    component="button"
+                    variant="body2"
+                    style={{color: '#828282', fontWeight: 'bold', fontSize: 16}}
+                    onClick={() => {
+                        history.push('/about')
+                }}
+                >
+                    ABOUT
+                </Link>
+                <Link
+                    component="button"
+                    variant="body2"
+                    style={{color: '#828282', fontWeight: 'bold', fontSize: 16, paddingTop: 10}}
+                    onClick={() => {
+                        history.push('/projects')
+                    }}
+                >
+                    PROJECTS
+                </Link>
+                        </div>
+                        </ClickAwayListener>
+                    </Popover>
                 </div>
             </Toolbar>
         </AppBar>

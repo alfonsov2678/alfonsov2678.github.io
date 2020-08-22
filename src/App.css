@@ -147,10 +147,39 @@
   justify-content: space-around;
   flex-flow: wrap;
   margin: 0 auto;
-  margin-top: 40px;
   float: right;
 }
 
 .art-mobile {
   display: none;
+}
+
+@media screen and (max-width: 950px) {
+  .main-title h1 {
+      padding: 20px;
+  }
+  .art-mobile {
+      display: block;
+      margin-top: -10px;
+  }
+  .art-nav-items {
+      display: none;
+  }
+  .header-name {
+    font-size: 15;
+  }
+}
+
+.art-mobile-items{
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  color: black;
+  text-align: center;
+  padding: 20px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 17px;
+  margin: 0 auto;
+  border-bottom: 3px solid white;
 }
