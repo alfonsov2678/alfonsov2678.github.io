@@ -9,7 +9,7 @@ import Linkedin from '..//assets/linkedin.png'
 import Instagram from '..//assets/instagram.png'
 import Facebook from '..//assets/facebook.png'
 import GitHub from '..//assets/github.svg'
-import Gmail from '..//assets/gmail.webp'
+import Gmail from '..//assets/gmail.png'
 import Twitter from '..//assets/twitter.png'
 import { makeStyles } from '@material-ui/core/styles';
 import Tooltip from '@material-ui/core/Tooltip';

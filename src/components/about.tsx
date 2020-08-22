@@ -6,7 +6,7 @@ import Eighteen from '../assets/eighteen.png'
 import Chelsea from '../assets/chelsea.jpg'
 import KidCudi from '../assets/kidCudi.png'
 import Inception from '../assets/inception.jpg'
-import Austin from '../assets/austin.webp'
+import Austin from '../assets/austin.jpg'
 import Knicks from '../assets/knicks.jpg'
 import Avatar from '@material-ui/core/Avatar';
 import { makeStyles } from '@material-ui/core/styles';

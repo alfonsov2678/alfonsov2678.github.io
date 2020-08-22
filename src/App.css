@@ -186,7 +186,7 @@
 
 
 
-.skill-image, .social-image {
+.project-image, .social-image, .skill-image {
   width: 80%;
   display: flex;
   margin: 0 auto;

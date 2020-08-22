@@ -149,7 +149,7 @@ const useStyles = makeStyles((theme) => ({
             <div className={classes.paper} style={{height: 400}}>
             <Typography align={'center'} style={{fontSize: 35, fontWeight: 'bold', marginBottom: 10}}>{props.text}</Typography>
               <img src={props.popup} className='project-image'
-                 style={{display: 'block', marginLeft: 'auto', marginRight: 'auto', height: `${props.imageHeight}`, width: `${props.imageWidth}`, borderColor: 'black'}}
+                
               />
             <Typography align={'center'} style={{fontSize: 20, fontWeight: 'bold', marginTop: 10, marginBottom: 5}}>Details</Typography>
             <Typography align={'center'} variant='body1' style={{marginLeft: 20, marginRight: 20}}>{props.description}</Typography>
