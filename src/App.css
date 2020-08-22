@@ -139,3 +139,18 @@
 .project-image {
   border: solid 1px #000000;
 }
+
+.art-nav {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+  margin: 0 auto;
+  margin-top: 40px;
+  float: right;
+}
+
+.art-mobile {
+  display: none;
+}
