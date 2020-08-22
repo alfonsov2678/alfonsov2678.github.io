@@ -44,7 +44,9 @@ function RenderIcon(props: any) {
     // render the icon for display in the social page
     return (
         <Tooltip title={props.title}>
-            <Avatar src={props.image} alt={props.title} style={{width: 52, height: 52, backgroundColor: 'white'}} onClick={() => OpenSocial(props.link)}/>      
+            <div className='social-box'>
+            <Avatar src={props.image} alt={props.title} style={{width: 52, height: 52, backgroundColor: 'white', margin: 'auto'}} onClick={() => OpenSocial(props.link)}/>
+            </div>      
         </Tooltip>
     )
 }

@@ -31,6 +31,7 @@ const Projects : React.FC = () => {
             <Typography align={'center'} variant='h4' style={{fontWeight: 'bold', marginTop: 15, marginBottom: 15}}>PROJECTS</Typography>
             <div className='flex-container'>
                 <Project title='Deal' text='Deal' image={Deal} imageHeight={'70%'} achievements={null}
+                height={500}
                 imageWidth={'25%'} popup={DealLogin} text2='Platform for card exchange and personal management' 
                 width={450} link='https://github.com/alfonsov2678/deal'
                 description='Deal is a platform for people to manage and increase their own personal image by providing various innovations within networking.'
@@ -40,7 +41,7 @@ const Projects : React.FC = () => {
                 iconHeight={40}
                 />
                 <Project title='Proximity' text='Proximity' imageHeight={'60%'} imageWidth={'70%'} 
-                image={Proximity} popup={ProximityDemo} text2='Versatile distance based audio for conferencing' width={425} 
+                image={Proximity} popup={ProximityDemo} text2='Versatile distance based audio for conferencing' width={300} 
                 link='https://github.com/alfonsov2678/proximity'
                 description="Proximity is a distanced based audio scalable to millions of users that aims to create a closer connection to reality and each other."
                 technology={proximityTechnology}
@@ -51,8 +52,8 @@ const Projects : React.FC = () => {
                 />
             </div>
             <div className='flex-container' style={{marginTop: 50}}>
-                 <Project title='Argo' text='Argo' imageHeight={'60%'} imageWidth={'70%'} 
-                image={Argo} popup={Argo} text2='Robot for the FTC 2018-2019 Rover Ruckus Season' width={'100%'} 
+                 <Project title='Argo' text='Argo' imageHeight={'60%'} imageWidth={'60%'} 
+                image={Argo} popup={Argo} text2='Robot for the FTC 2018-2019 Rover Ruckus Season' width={415} 
                 link='https://www.youtube.com/watch?v=byaKel4XQuE'
                 description="Argo was the robot that my team competed with during the Rover Ruckus challenge. Some unique features of Argo include a PTO transmission system
                 to shift motor usage between the drivetrain and lift, a 6 motor drive train, and an efficient sorter between minerals"
@@ -62,7 +63,7 @@ const Projects : React.FC = () => {
                 iconWidth={'7%'}
                 iconHeight={40}
                 />
-                <Project title='Chad' text='Chad' imageHeight={'60%'} imageWidth={'70%'} 
+                <Project title='Chad' text='Chad' imageHeight={'60%'} imageWidth={'60%'} 
                 image={Chad} popup={Chad} text2='Robot for the FTC 2019-2020 SkyStone Season' width={425} 
                 link='https://www.youtube.com/watch?v=6ZTlQrOAFVc'
                 description="Chad was the robot that my team competed with during the Sky Stone challenge. Unique features on chad include the servo powered side claws on both sides of the robot, 
@@ -80,7 +81,7 @@ const Projects : React.FC = () => {
 
 function Project(props: any) {
     return (
-        <div className='project' style={{width: 575}}>
+        <div className='project' >
             <div className='project-title' style={{ backgroundColor: 'black', height: 50, width: '100%'}} >
                 <Typography align={'center'} style={{color: 'white', fontSize: 27, paddingTop: 5, fontWeight: 'bold'}}>{props.text}</Typography>
                 <Tooltip title={props.title} style={{margin: 10}} onClick={() => OpenSocial(`${props.link}`)}>
@@ -89,7 +90,8 @@ function Project(props: any) {
             </div>
             <CardContent style={{margin: 10, padding: 10}}>
                     <img
-                        style={{display: 'block', marginLeft: 'auto', marginRight: 'auto', height: 350, width: `${props.width}`}}
+                        className='skill-image'
+                        style={{display: 'block', marginLeft: 'auto', marginRight: 'auto', height: 285, width: `${props.width}`}}
                         src={props.image}
                         title={props.title}
                         />
