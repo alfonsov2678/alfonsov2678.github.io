@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9f7adb8d.chunk.css",
+    "main.js": "/static/js/main.496c87ed.chunk.js",
+    "main.js.map": "/static/js/main.496c87ed.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c34c0ec6.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c34c0ec6.js.map",
+    "static/js/2.648e2a86.chunk.js": "/static/js/2.648e2a86.chunk.js",
+    "static/js/2.648e2a86.chunk.js.map": "/static/js/2.648e2a86.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.d6eeb7739a9b59458b410c714285cf5d.js": "/precache-manifest.d6eeb7739a9b59458b410c714285cf5d.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.9f7adb8d.chunk.css.map": "/static/css/main.9f7adb8d.chunk.css.map",
+    "static/js/2.648e2a86.chunk.js.LICENSE.txt": "/static/js/2.648e2a86.chunk.js.LICENSE.txt",
+    "static/media/argo.png": "/static/media/argo.4c8f1a81.png",
+    "static/media/austin.webp": "/static/media/austin.91612efe.webp",
+    "static/media/chad.png": "/static/media/chad.09122171.png",
+    "static/media/chelsea.jpg": "/static/media/chelsea.b623d929.jpg",
+    "static/media/dealLogo.png": "/static/media/dealLogo.bb408949.png",
+    "static/media/github.svg": "/static/media/github.76d344f0.svg",
+    "static/media/gmail.webp": "/static/media/gmail.d3987c8e.webp",
+    "static/media/inception.jpg": "/static/media/inception.06132c60.jpg",
+    "static/media/instagram.png": "/static/media/instagram.5af73d5f.png",
+    "static/media/kidCudi.png": "/static/media/kidCudi.cd6ac95e.png",
+    "static/media/knicks.jpg": "/static/media/knicks.f106a78b.jpg",
+    "static/media/linkedin.png": "/static/media/linkedin.1afd5ac6.png",
+    "static/media/login.png": "/static/media/login.04b1e4de.png",
+    "static/media/me.jpg": "/static/media/me.3d863a22.jpg",
+    "static/media/profile.png": "/static/media/profile.72667c5e.png",
+    "static/media/proximity.png": "/static/media/proximity.0ea611ac.png",
+    "static/media/proximityDemo.png": "/static/media/proximityDemo.675535ef.png",
+    "static/media/university.png": "/static/media/university.a3bd397f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c34c0ec6.js",
+    "static/js/2.648e2a86.chunk.js",
+    "static/css/main.9f7adb8d.chunk.css",
+    "static/js/main.496c87ed.chunk.js"
+  ]
+}
