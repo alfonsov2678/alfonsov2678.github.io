@@ -89,12 +89,13 @@ function Project(props: any) {
                 </Tooltip>
             </div>
             <CardContent style={{margin: 10, padding: 10}}>
+                    <td className='image-container' style={{height: 385}}>
                     <img
                         className='skill-image'
-                        style={{display: 'block', marginLeft: 'auto', marginRight: 'auto', height: 285, width: `${props.width}`}}
                         src={props.image}
                         title={props.title}
                         />
+                    </td>
                     <CardContent>
                         <Typography variant='h6' align={'center'} style={{fontSize: 17, fontStyle: 'italic'}}>{props.text2}</Typography>
                         <TransitionsModal achievements={props.achievements} technology={props.technology} description={props.description} popup={props.popup} imageHeight={props.imageHeight} imageWidth={props.imageWidth} text={props.text}/>

@@ -88,6 +88,9 @@
   margin-top: 40px;
 }
 
+.social-box {
+  margin: 5px;
+}
 .name-intro {
   border: 10px solid;
   border-color: #12ff90 #ffffff #000000;
@@ -108,6 +111,7 @@
 
 .project {
   background: white;
+  margin: 10px;
   width: 40%;
   box-shadow: 0px 0px 5px 0px #3F3F3F;
   -webkit-transition: box-shadow 0.3s ease;
@@ -185,11 +189,21 @@
 }
 
 
-
+.bottom-text {
+  font-size: 17
+}
 .project-image, .social-image, .skill-image {
   width: 80%;
   display: flex;
-  margin: 0 auto;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:  auto;
+  margin-bottom: auto;
+}
+
+.image-container {
+  vertical-align: middle;
 }
 
 .social-image {
@@ -216,6 +230,9 @@
   .menu-container {
       width: 300px
   }
+  .bottom-text{
+    font-size: 12;
+  }
 }
 
 
@@ -223,4 +240,12 @@
   .project, .welcome {
       width: 90%;
   }
+}
+
+.welcome-image {
+  object-fit: cover;
+  object-position: 0 0;
+  overflow:hidden;
+  width: 100%;
+  height: 600px;
 }
