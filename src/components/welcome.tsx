@@ -1,6 +1,6 @@
 import React from 'react'
 import MIT from '../assets/me.jpg'
-import Oculus from '../assets/oculus.JPG'
+import Oculus from '../assets/oculus.jpg'
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import { Typography } from '@material-ui/core';
