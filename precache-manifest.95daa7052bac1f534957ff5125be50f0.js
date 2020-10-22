@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "237021159092e722f6eef9052ad98b17",
+    "revision": "f43728788237fa5347f425a076db84a6",
     "url": "/index.html"
   },
   {
-    "revision": "f82a442c25a54015fd04",
+    "revision": "93fa6ef088a392c1d1cb",
     "url": "/static/css/main.e588bc7d.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.7f89a6b6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f82a442c25a54015fd04",
-    "url": "/static/js/main.c82942f0.chunk.js"
+    "revision": "93fa6ef088a392c1d1cb",
+    "url": "/static/js/main.daf418da.chunk.js"
   },
   {
     "revision": "506adfa26ad76816c4a2",
@@ -72,8 +72,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/login.04b1e4de.png"
   },
   {
-    "revision": "3d863a22c68f615583f6ee2ba8e82223",
-    "url": "/static/media/me.3d863a22.jpg"
+    "revision": "492b05a3b0c1a6cf7741bd47802b5ce9",
+    "url": "/static/media/oculus.492b05a3.jpg"
   },
   {
     "revision": "72667c5eddf04a3054292b5ed09496a2",
