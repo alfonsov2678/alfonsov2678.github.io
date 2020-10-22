@@ -1,5 +1,6 @@
 import React from 'react'
 import MIT from '../assets/me.jpg'
+import Oculus from '../assets/oculus.JPG'
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import { Typography } from '@material-ui/core';
@@ -13,7 +14,7 @@ const Welcome: React.FC = () => {
             <Typography align={'center'} variant='h4' style={{fontWeight: 'bold', marginTop: 15, marginBottom: 15}}>WELCOME</Typography>
         </div>
         <div className='flex-container'>
-            <img src={MIT} style={{height: '35%', width: '50%'}} />
+            <img src={Oculus} style={{height: '35%', width: '50%'}} />
             <div className='title-box' style={{width: 550, marginTop: 30}}>
                     <td className='image-container'> 
                     <CardContent>
