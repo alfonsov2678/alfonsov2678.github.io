@@ -26,7 +26,8 @@ export default function NavBar() {
     const classes = useStyles()
     const history = useHistory()
     const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
-
+    const [aboutActive, setAboutActive] = useState(false)
+    const [projectActive, setProjectsActive] = useState(false)
     const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
         setAnchorEl(event.currentTarget);
       };
@@ -38,7 +39,7 @@ export default function NavBar() {
     return (
         <AppBar className={classes.root} style={{backgroundColor: '#444445', position: 'absolute'}}>
             <Toolbar>
-                <Typography className='header-name' variant='h4' style={{color: 'white', fontWeight: 'bold', paddingLeft: 60}} onClick={() => history.push('/')}>ALFONSO VELASCO</Typography>
+                <Typography className='header-name' variant='h4' style={{color: 'white', fontWeight: 'bold', paddingLeft: 60, fontFamily: 'Montserrat'}} onClick={() => { history.push('/'); setAboutActive(false); setProjectsActive(false)} }>ALFONSO VELASCO</Typography>
                 <div className='art-nav'>
                     <div className='art-mobile' >
                     <IconButton style={{ color: "white" }} onClick={handleClick}>
@@ -49,9 +50,11 @@ export default function NavBar() {
                     <Link
                     component="button"
                     variant="body2"
-                    style={{color: '#828282', fontWeight: 'bold', fontSize: 16, paddingLeft: 500}}
+                    style={{color: aboutActive? 'white' : '#828282', fontWeight: 'bold', fontSize: 16, paddingLeft: 500, fontFamily: 'Montserrat'}}
                     onClick={() => {
                         history.push('/about')
+                        setAboutActive(true)
+                        setProjectsActive(false)
                 }}
                 >
                     ABOUT
@@ -59,9 +62,11 @@ export default function NavBar() {
                 <Link
                     component="button"
                     variant="body2"
-                    style={{color: '#828282', fontWeight: 'bold', fontSize: 16, paddingLeft: 25}}
+                    style={{color: projectActive? 'white': '#828282', fontWeight: 'bold', fontSize: 16, paddingLeft: 25, fontFamily: 'Montserrat'}}
                     onClick={() => {
                         history.push('/projects')
+                        setProjectsActive(true)
+                        setAboutActive(false)
                     }}
                 >
                     PROJECTS

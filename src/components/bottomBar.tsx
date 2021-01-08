@@ -9,7 +9,7 @@ import Grid from '@material-ui/core/Grid';
 export default function BottomBar() {
     return (
         <div>
-            <div style={{backgroundColor: '#3472a8', marginTop: 20}}>
+            <div style={{backgroundColor: '#022169', marginTop: 20}}>
                 <Typography align={'center'} className='bottom-text' style={{color: 'white', fontWeight: 'bold', paddingTop: 6}}>Created by Alfonso Velasco | alfonsoluisvelasco@gmail.com</Typography>
             </div>
         </div>

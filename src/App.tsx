@@ -15,7 +15,6 @@ function App() {
     <React.Fragment>
       <Router>
         <div >
-        <Container>
           <NavBar />
           <Switch>
             <Route component={Welcome} exact path='/' />
@@ -23,7 +22,6 @@ function App() {
             <Route component={Projects} path='/projects' />
           </Switch>
           <SocialMedia />
-        </Container>
         <BottomBar />
         </div>
       </Router>

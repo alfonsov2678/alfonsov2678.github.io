@@ -69,7 +69,7 @@
   border-radius: 100%;
   margin: 0 auto;
   margin-top: 20px;
-  border: solid 5px #4abaff;
+  border: solid 5px #B9D9EB;
   background-image: linear-gradient(white, white), radial-gradient(circle at top left, #F012BE, #39CCCC);
   background-origin: border-box;
 }

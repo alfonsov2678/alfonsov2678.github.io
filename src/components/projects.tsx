@@ -11,6 +11,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
+import Container from '@material-ui/core/Container';
 import Button from '@material-ui/core/Button';
 import DealLogin from '..//assets/login.png'
 import ProximityDemo from '..//assets/proximityDemo.png'
@@ -27,6 +28,7 @@ const Projects : React.FC = () => {
     const chadTechnology = ['Autodesk Inventor', 'Java', 'IntelliJ', 'Odometry', 'GoBilda', 'CNC Router', 'Tensorflow', '3D Printer']
     const chadAchievements = ['Word Championships Qualifier (Canceled due to COVID-19 Pandemic)', 'UIL State Championship Qualifier (Canceled due to COVID-19 pandemic)', 'Texas Regional Championships First Selection', 'Texas Regional Championships Inspire Award 2nd', 'Austin Metro League First Alliance Captain', 'Austin Metro League Inspire Award 2nd Place']
     return (
+      <Container>
         <div style={{paddingTop: 125}}>
             <Typography align={'center'} variant='h4' style={{fontWeight: 'bold', marginTop: 15, marginBottom: 15}}>PROJECTS</Typography>
             <div className='flex-container'>
@@ -76,6 +78,7 @@ const Projects : React.FC = () => {
                 />
             </div>
         </div>
+        </Container>
     )
 }
 
