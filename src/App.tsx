@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './App.css';
 import {HashRouter as Router, Route, Switch} from 'react-router-dom'
 import NavBar from './components/navbar'
@@ -10,11 +10,15 @@ import Welcome from './components/welcome'
 import Projects from './components/projects'
 
 function App() {
+  useEffect(() => {
+    document.title = "ALV"
+  }, [])
+  
   return (
     
     <React.Fragment>
       <Router>
-        <div >
+        <div style={{backgroundColor: '#1F2833'}}>
           <NavBar />
           <Switch>
             <Route component={Welcome} exact path='/' />

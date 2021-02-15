@@ -11,10 +11,10 @@ const Welcome: React.FC = () => {
     const items = ['Coding', 'Robotics', 'Reading', 'Watching Sports', 'Running'];
     
     return (
-        <div style={{ paddingTop: 85 }} >
+        <div style={{ paddingTop: 85, backgroundColor: '#1F2833'}} >
             <Container>
                 <div className='name-intro' style={{ marginBottom: 50 }}>
-                    <Typography align={'center'} variant='h4' style={{ fontWeight: 'bold', marginTop: 15, marginBottom: 15 }}>WELCOME</Typography>
+                    <Typography align={'center'} variant='h1' style={{ fontWeight: 'bold', marginTop: 15, marginBottom: 15, color: '#66FCF1', fontFamily: 'Montserrat' }}>WELCOME</Typography>
                 </div>
             </Container>
             <div>
@@ -24,12 +24,12 @@ const Welcome: React.FC = () => {
                         <div className='title-box' style={{ width: 550, marginTop: 30 }}>
                             <td className='image-container'>
                                 <CardContent>
-                                    <Typography variant='h6' align={'center'} style={{ fontWeight: 'bold' }}>Passionate, Driven, Motivated</Typography>
-                                    <Typography variant='body1' style={{ marginTop: 13, fontSize: 17 }}>Hi, I'm Alfonso and these are a couple of adjectives that I would use to describe myself. I participate in a lot of activities and I have a lot of hobbies, some of my favorites include:</Typography>
+                                    <Typography variant='h6' align={'center'} style={{ fontWeight: 'bold', color: '#C5C6C7', fontFamily: 'Work Sans'}}>Passionate, Driven, Motivated</Typography>
+                                    <Typography variant='body1' style={{ marginTop: 13, fontSize: 17, color: '#C5C6C7', fontFamily: 'Work Sans' }}>Hi, I'm Alfonso and these are a couple of adjectives that I would use to describe myself. I participate in a lot of activities and I have a lot of hobbies, some of my favorites include:</Typography>
                                     {items.map((item: string) => (
-                                        <li style={{ fontSize: 17, marginTop: 7, marginLeft: 10 }}>{item}</li>
+                                        <li style={{ fontSize: 17, marginTop: 7, marginLeft: 10, color: '#C5C6C7', fontFamily: 'Work Sans'}}>{item}</li>
                                     ))}
-                                    <Typography variant='body1' style={{ marginTop: 13, fontSize: 17 }}>I could go on about all the things I like to do and my favorite books, movies, and artists. Anyways, this website focuses
+                                    <Typography variant='body1' style={{ marginTop: 13, fontSize: 17, color: '#C5C6C7' , fontFamily: 'Work Sans'}}>I could go on about all the things I like to do and my favorite books, movies, and artists. Anyways, this website focuses
                         on a lot of the cool things I am doing, I hope you take a look and enjoy!</Typography>
                                 </CardContent>
                             </td>

@@ -37,18 +37,18 @@ export default function About() {
     // Render the about page for the website
     return (
         <div style={{ paddingTop: 85 }}>
-            <div style={{ backgroundColor: '#022169', height: 325}}>
+            <div style={{ backgroundColor: '#1F2833', height: 325}}>
                 <div style={{marginTop: -8}}><Typography style={{color: '#022169', fontSize: 2}}>Congrats you found an easter egg on the site</Typography></div>
                 <div className='header-img'>
                     <Avatar src={Alfonso} alt='Alfonso Velasco' style={{ width: 275, height: 275, margin: 'auto'}} />
                 </div>
             </div>
-            <div style={{backgroundColor: '#B9D9EB' }}>
-                <Typography align={'center'} style={{ marginTop: 10, fontSize: 30, fontWeight: 'bold' }}>ME</Typography>
-                <Typography variant='h6' align={'center'} style={{ marginTop: 0, fontFamily: 'italic' }}>Hi, I'm Alfonso and I'm a passionate creator</Typography>
-                <Typography variant='h5' align={'center'} style={{ marginTop: 25, paddingBottom: 25, fontWeight: 'bold' }}>A Quick Rundown</Typography>
+            <div style={{backgroundColor: '#1F2833' }}>
+                <Typography align={'center'} style={{ marginTop: 10, fontSize: 30, fontWeight: 'bold', fontFamily: 'Montserrat', color: '#C5C6C7',}}>ME</Typography>
+                <Typography variant='h6' align={'center'} style={{ marginTop: 0, fontFamily: 'Work Sans', color: '#C5C6C7',}}>Hi, I'm Alfonso and I'm a passionate creator</Typography>
+                <Typography variant='h5' align={'center'} style={{ marginTop: 25, paddingBottom: 25, fontWeight: 'bold', color: '#C5C6C7', fontFamily: 'Montserrat' }}>A Quick Rundown</Typography>
             </div>
-            <div style={{ backgroundColor: '#B9D9EB'}}>
+            <div style={{ backgroundColor: '#1F2833'}}>
                 <Container>
                     <div className='flex-container'>
                         <InfoCard text='I attend Columbia University' image={University} title='Columbia Univeristy' />
@@ -73,7 +73,7 @@ function InfoCard(props: any) {
     const classes = useStyles()
     return (
         
-            <div className='fun-fact' style={{width: 250, height: 240}}>
+            <div className='fun-fact' style={{width: 250, height: 240,}}>
                 <CardActionArea>
                     <img
                         className={classes.img}
@@ -82,7 +82,7 @@ function InfoCard(props: any) {
                         title={props.title}
                         />
                     <CardContent>
-                        <Typography variant='h6' align={'center'} style={{fontSize: 16, fontWeight: 'bold'}}>{props.text}</Typography>
+                        <Typography variant='h6' align={'center'} style={{fontSize: 16, fontWeight: 'bold', fontFamily: 'Work Sans'}}>{props.text}</Typography>
                     </CardContent>
                 </CardActionArea>
             </div>

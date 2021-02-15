@@ -69,8 +69,7 @@
   border-radius: 100%;
   margin: 0 auto;
   margin-top: 20px;
-  border: solid 5px #B9D9EB;
-  background-image: linear-gradient(white, white), radial-gradient(circle at top left, #F012BE, #39CCCC);
+  border: solid 5px #66fcf1;
   background-origin: border-box;
 }
 
@@ -92,8 +91,6 @@
   margin: 5px;
 }
 .name-intro {
-  border: 10px solid;
-  border-color: #12ff90 #ffffff #000000;
 }
 
 .important-text{

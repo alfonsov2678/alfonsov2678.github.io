@@ -37,9 +37,9 @@ export default function NavBar() {
   };
 
     return (
-        <AppBar className={classes.root} style={{backgroundColor: '#444445', position: 'absolute'}}>
+        <AppBar className={classes.root} style={{backgroundColor: '#0B0C10', position: 'absolute', height: '8%'}}>
             <Toolbar>
-                <Typography className='header-name' variant='h4' style={{color: 'white', fontWeight: 'bold', paddingLeft: 60, fontFamily: 'Montserrat'}} onClick={() => { history.push('/'); setAboutActive(false); setProjectsActive(false)} }>ALFONSO VELASCO</Typography>
+                <Typography className='header-name' variant='h5' style={{color: 'white', fontWeight: 'bold', paddingLeft: 60, fontFamily: 'Montserrat'}} onClick={() => { history.push('/'); setAboutActive(false); setProjectsActive(false)} }>ALFONSO VELASCO</Typography>
                 <div className='art-nav'>
                     <div className='art-mobile' >
                     <IconButton style={{ color: "white" }} onClick={handleClick}>

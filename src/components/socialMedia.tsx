@@ -25,8 +25,8 @@ export default function SocialMedia() {
     const classes = useStyles()
     return (
             <div>
-                <Typography align={'center'} style={{marginTop: 25, fontSize: 30, fontWeight: 'bold'}}>SOCIAL MEDIA</Typography>
-                <Typography variant='h6' align={'center'} style={{fontSize: 17, marginTop: 5}}>If you want to chat, add me on the following platforms</Typography>
+                <Typography align={'center'} style={{marginTop: 25, fontSize: 30, fontWeight: 'bold', color: '#C5C6C7', fontFamily: 'Work Sans'}}>SOCIAL MEDIA</Typography>
+                <Typography variant='h6' align={'center'} style={{fontSize: 17, marginTop: 5, color: '#C5C6C7', fontFamily: 'Work Sans'}}>If you want to chat, add me on the following platforms</Typography>
                 <div className='social-container'>
                     <RenderIcon image={Linkedin} title='Linkedin' link='https://www.linkedin.com/in/alfonso-velasco-21b3aa19b/'/>
                     <RenderIcon image={GitHub} title='Github' link='https://github.com/alfonsov2678' />

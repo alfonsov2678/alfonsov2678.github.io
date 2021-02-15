@@ -30,7 +30,7 @@ const Projects : React.FC = () => {
     return (
       <Container>
         <div style={{paddingTop: 125}}>
-            <Typography align={'center'} variant='h4' style={{fontWeight: 'bold', marginTop: 15, marginBottom: 15}}>PROJECTS</Typography>
+            <Typography align={'center'} variant='h4' style={{fontWeight: 'bold', marginTop: 15, marginBottom: 15, color: '#C5C6C7', fontFamily: 'Work Sans'}}>PROJECTS</Typography>
             <div className='flex-container'>
                 <Project title='Deal' text='Deal' image={Deal} imageHeight={'70%'} achievements={null}
                 height={500}
@@ -84,9 +84,9 @@ const Projects : React.FC = () => {
 
 function Project(props: any) {
     return (
-        <div className='project' >
-            <div className='project-title' style={{ backgroundColor: 'black', height: 50, width: '100%'}} >
-                <Typography align={'center'} style={{color: 'white', fontSize: 27, paddingTop: 5, fontWeight: 'bold'}}>{props.text}</Typography>
+        <div className='project' style={{ backgroundColor: '#0B0C10'}}>
+            <div className='project-title' style={{ backgroundColor: '#45a29e', height: 50, width: '100%'}} >
+                <Typography align={'center'} style={{ fontSize: 27, paddingTop: 5, fontWeight: 'bold', color: '#C5C6C7', fontFamily: 'Work Sans'}}>{props.text}</Typography>
                 <Tooltip title={props.title} style={{margin: 10}} onClick={() => OpenSocial(`${props.link}`)}>
                     <img className='icon' src={props.icon} style={{height: `${props.iconHeight}`, width: `${props.iconWidth}`}}/>
                 </Tooltip>
@@ -99,9 +99,9 @@ function Project(props: any) {
                         title={props.title}
                         />
                     </td>
-                    <CardContent>
-                        <Typography variant='h6' align={'center'} style={{fontSize: 17, fontStyle: 'italic'}}>{props.text2}</Typography>
-                        <TransitionsModal achievements={props.achievements} technology={props.technology} description={props.description} popup={props.popup} imageHeight={props.imageHeight} imageWidth={props.imageWidth} text={props.text}/>
+                    <CardContent style={{backgroundColor: '#0B0C10'}}>
+                        <Typography variant='h6' align={'center'} style={{fontSize: 17, fontStyle: 'italic', color: '#C5C6C7', fontFamily: 'Work Sans'}}>{props.text2}</Typography>
+                        <TransitionsModal style={{backgroundColor: '#0B0C10'}} achievements={props.achievements} technology={props.technology} description={props.description} popup={props.popup} imageHeight={props.imageHeight} imageWidth={props.imageWidth} text={props.text}/>
                     </CardContent>
             </CardContent>
         </div>
@@ -140,8 +140,9 @@ const useStyles = makeStyles((theme) => ({
     const tech = props.technology
     const {achievements} = props
     return (
-      <div className='flex-container'>
-        <Button variant="contained" color="secondary" onClick={handleOpen} style={{marginTop: 10, width: 200, borderRadius: 10, height: 40, fontSize: 17}}>
+
+      <div className='flex-container' >
+        <Button variant="contained" color="secondary" onClick={handleOpen} style={{marginTop: 10, width: 200, borderRadius: 10, height: 40, fontSize: 17, backgroundColor:  '#45a29e' }}>
         Details
       </Button>
         <Dialog
@@ -150,21 +151,21 @@ const useStyles = makeStyles((theme) => ({
           closeAfterTransition
         >
           <Fade in={open}>
-            <div className={classes.paper} style={{height: 400}}>
-            <Typography align={'center'} style={{fontSize: 35, fontWeight: 'bold', marginBottom: 10}}>{props.text}</Typography>
+            <div className={classes.paper} style={{backgroundColor: '#0B0C10'}}>
+            <Typography align={'center'} style={{fontSize: 35, fontWeight: 'bold', marginBottom: 10, color: '#C5C6C7', fontFamily: 'Work Sans'}}>{props.text}</Typography>
               <img src={props.popup} className='project-image'
                 
               />
-            <Typography align={'center'} style={{fontSize: 20, fontWeight: 'bold', marginTop: 10, marginBottom: 5}}>Details</Typography>
-            <Typography align={'center'} variant='body1' style={{marginLeft: 20, marginRight: 20}}>{props.description}</Typography>
-            <Typography align={'center'} style={{fontSize: 20, fontWeight: 'bold', marginTop: 10, marginBottom: 5}}>Technology Used</Typography>
+            <Typography align={'center'} style={{fontSize: 20, fontWeight: 'bold', marginTop: 10, marginBottom: 5, color: '#C5C6C7', fontFamily: 'Montserrat'}}>Details</Typography>
+            <Typography align={'center'} variant='body1' style={{marginLeft: 20, marginRight: 20, color: '#C5C6C7', fontFamily: 'Work Sans'}}>{props.description}</Typography>
+            <Typography align={'center'} style={{fontSize: 20, fontWeight: 'bold', marginTop: 10, marginBottom: 5, color: '#C5C6C7', fontFamily: 'Montserrat'}}>Technology Used</Typography>
             {tech.map((item: string) => (
-                            <li style={{fontSize: 17, marginTop: 7, marginLeft: 10}}>{item}</li>
+                            <li style={{fontSize: 17, marginTop: 7, marginLeft: 10, color: '#C5C6C7', fontFamily: 'Work Sans'}}>{item}</li>
                         ))}
              {props.achievements != null? <div>
-                <Typography align={'center'} style={{fontSize: 20, fontWeight: 'bold', marginTop: 10, marginBottom: 5}}>Achievements</Typography>
+                <Typography align={'center'} style={{fontSize: 20, fontWeight: 'bold', marginTop: 10, marginBottom: 5, color: '#C5C6C7', fontFamily: 'Work Sans'}}>Achievements</Typography>
                 {achievements.map((item: string) => (
-                            <li style={{fontSize: 17, marginTop: 7, marginLeft: 10}}>{item}</li>
+                            <li style={{fontSize: 17, marginTop: 7, marginLeft: 10 , color: '#C5C6C7', fontFamily: 'Work Sans'}}>{item}</li>
                         ))}
             </div>: <div></div>}
             </div>

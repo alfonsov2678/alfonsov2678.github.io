@@ -7,7 +7,7 @@ var WebFont = require('webfontloader');
 
 WebFont.load({
   google: {
-    families: ['Titillium Web:300,400,700', 'sans-serif', 'Montserrat', 'Roboto']
+    families: ['Titillium Web:300,400,700', 'sans-serif', 'Montserrat', 'Roboto', 'Work Sans']
   }
 });
 
